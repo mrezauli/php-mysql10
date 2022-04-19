@@ -11,7 +11,7 @@ require_once "browse.php";
     </div>
     <div class="card-body">
         <h5 class="card-title">Name: <?=$phone['name']?></h5>
-        <p class="card-text">Mobile: <?=$phone['mobile']?></p>
+        <p class="card-text">Mobile: <?= '+8801' . $phone['mobile']?></p>
     </div>
 </div>
 

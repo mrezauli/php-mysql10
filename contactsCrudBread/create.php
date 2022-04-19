@@ -11,7 +11,7 @@ require_once "header.php";
         <label for="floatingInput">Name</label>
     </div>
     <div class="form-floating m-3">
-        <input type="number" name="mobile" class="form-control" id="floatingPassword" placeholder="Password">
+        <input type="tel" class="form-control" id="floatingPassword" name="mobile" pattern="[0-9]{9}" placeholder="Password">
         <label for="floatingPassword">Mobile</label>
     </div>
 

@@ -12,7 +12,7 @@ require "browse.php";
         <label for="floatingInput">Name</label>
     </div>
     <div class="form-floating m-3">
-        <input type="number" name="mobile" value="<?= $phone['mobile'] ?>" class="form-control" id="floatingPassword" placeholder="Password">
+        <input type="tel" class="form-control" id="floatingPassword" name="mobile" value="<?= $phone['mobile'] ?>" pattern="[0-9]{9}" placeholder="Password">
         <label for="floatingPassword">Mobile</label>
     </div>
 

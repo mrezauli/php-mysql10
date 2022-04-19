@@ -1,11 +1,11 @@
 <?php
 
 require_once "header.php";
-require_once "fetch.php";
+require_once "pattern.php";
 
 ?>
 
-<a href="create.php" class="btn btn-primary mt-1">Create / Add</a>
+<h5>Searched Result by <i class="text-primary"><?=$name?></i> :</h5>
 
 <table class="table table-striped">
     <thead>
