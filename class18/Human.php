@@ -1,11 +1,8 @@
 <?php
 
-// $rahim = new Human();
-// $frade500 = new Iron();
-// $fajli = new Mango();
-// $reverseOsmosis = new Water();
+namespace Application;
 
-class Human 
+class Human
 {
     private $birthDate;
 
@@ -82,31 +79,16 @@ class Human
 
         return $this;
     }
+
+    public function __construct( $name = null, $birthDate, $deathDate) {
+        $this->name = $name;
+        $this->birthDate = $birthDate;
+        $this->deathDate = $deathDate;
+    }
+
+    public function __destruct( ) {
+        $this->name = null;
+        $this->birthDate = null;
+        $this->deathDate = null;
+    }
 }
-
-$rahim = new Human(); // $this of Human = rahim
-$rahim->eat();
-$rahim->walk();
-$rahim->setName("Rahim");
-$rahim->getName();
-$rahim->setBirthDate("01/01/2000");
-$rahim->getBirthDate();
-$rahim->setDeathDate("01-01-2080");
-$rahim->getDeathDate();
-
-$karim = new Human(); // $this of Human = karim
-$karim->setName("Karim");
-$karim->getName();
-
-$jamal = new Human(); // $this of Human = jamal
-$jamal->setName("Jamal");
-$jamal->getName();
-$jamal->setBirthDate("01-01-2010");
-
-$kamal = new Human(); // $this of Human = kamal
-$kamal->setName("Kamal");
-$kamal->getName();
-$kamal->setDeathDate("01-01-2090");
-$kamal->getDeathDate();
-
-$jamal->getBirthDate();
