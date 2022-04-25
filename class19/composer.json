@@ -1,0 +1,19 @@
+{
+    "name": "php-mysql10/class19",
+    "description": "abra ka dabra",
+    "type": "project",
+    "authors": [
+        {
+            "name": "kamal",
+            "email": "kamal@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Application\\": "src/"
+        }
+    }
+}

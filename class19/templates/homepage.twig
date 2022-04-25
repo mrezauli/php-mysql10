@@ -1,0 +1,13 @@
+<!-- templates/homepage.twig -->
+{#Hello Twig Viewers!#}
+<!-- templates/homepage.twig -->
+<h1>{{ pageTitle }}</h1>
+
+<div class="row">
+    {% for product in products %}
+        <div class="span4">
+            <h3>{{ product }}</h3>
+        </div>
+    {% endfor %}
+</div>
+<h1>land property: {{ james }}</h1>
